@@ -21,7 +21,7 @@ namespace FixFlow.Forms
             AuthService authService = new AuthService();
             var user = authService.Login(txtUsername.Text, txtPassword.Text);
 
-            if (user != null)
+            if (user != null)  
             {
                 MainForm mainForm = new MainForm();
                 this.Hide();
